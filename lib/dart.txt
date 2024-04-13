@@ -1,0 +1,28 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, sort_child_properties_last
+
+import 'package:flutter/material.dart';
+
+void telainicial() {
+  runApp(const TelaInicial());
+}
+
+class TelaInicial extends StatelessWidget {
+  const TelaInicial({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        backgroundColor: Color.fromARGB(255, 255, 255, 255),
+        body: SafeArea(
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
