@@ -1,0 +1,27 @@
+child: Builder( 
+    // forma alternativa de definir uma subclass,
+    // pode isso ocorre qnd nao é possivel encontra o Scaffold
+    // foi uma aternativa que achei para fazer a navegaçao oelas telas 
+    builder: (context) => TextButton( 
+        onPressed: () {
+            Navigator.push(
+                context, 
+                MaterialPageRoute(
+                    builder:(context) => const Gridteste()
+                    // o codigo em si é padrao, apenas na parte do const deve mudar indicando 
+                    // para qual tela ele deve ir, isso varia de contexto para contexto, mas o padrao é esse
+                ),
+            );
+        },  
+
+        // aq dentro se passa o parametro dentro do butao basicamente o text e o style 
+        //como o exemplo
+        child: Text( // tipo dele, poderia ser um icon ou ate uma img
+            'LOGIN', // texto que o butao recebe 
+            style: TextStyle( 
+                color: Colors.white, // cor do texto 
+                fontSize: 16, //tamanho do texto
+            ),
+        );
+    ),
+);

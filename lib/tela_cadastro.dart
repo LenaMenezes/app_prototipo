@@ -1,6 +1,9 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, sort_child_properties_last
 
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+import 'package:geek_connect/gridteste.dart';
+import 'package:geek_connect/texteimg.dart';
 
 void telacadastro() {
   runApp(const TelaCadastro());
@@ -112,30 +115,34 @@ class TelaCadastro extends StatelessWidget {
                 SizedBox(height: 20),
                 Container(
                   width: 200,
-                  height: 50, 
+                  height: 50,
                   decoration: BoxDecoration(
-                    color: const Color.fromARGB(
-                        255, 184, 184, 184),
-                    borderRadius:
-                        BorderRadius.circular(10), 
+                    color: const Color.fromARGB(255, 184, 184, 184),
+                    borderRadius: BorderRadius.circular(10),
                   ),
-                  child: ElevatedButton(
-                    onPressed: () {
-                      // logica de cadastro
-                    },
-                    child: Text(
-                      'CADASTRE-SE',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
+                  child: Builder(
+                    builder: (context) => TextButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const TesteImg()),
+                        );
+                      },
+                      child: Text(
+                        'CADASTRE-SE',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 16,
+                        ),
                       ),
-                    ),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.transparent,
-                      shadowColor: Colors.transparent,
-                      elevation: 0,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.transparent,
+                        shadowColor: Colors.transparent,
+                        elevation: 0,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
+                        ),
                       ),
                     ),
                   ),
