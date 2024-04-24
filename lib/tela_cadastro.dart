@@ -7,7 +7,7 @@ void telacadastro() {
 }
 
 class TelaCadastro extends StatelessWidget {
-  const TelaCadastro({Key? key}) : super(key: key);
+  const TelaCadastro({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -112,12 +112,10 @@ class TelaCadastro extends StatelessWidget {
                 SizedBox(height: 20),
                 Container(
                   width: 200,
-                  height: 50, 
+                  height: 50,
                   decoration: BoxDecoration(
-                    color: const Color.fromARGB(
-                        255, 184, 184, 184),
-                    borderRadius:
-                        BorderRadius.circular(10), 
+                    color: const Color.fromARGB(255, 184, 184, 184),
+                    borderRadius: BorderRadius.circular(10),
                   ),
                   child: ElevatedButton(
                     onPressed: () {
