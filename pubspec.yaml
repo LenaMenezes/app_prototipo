@@ -4,7 +4,7 @@ publish_to: 'none'
 version: 0.1.0
 
 environment:
-  sdk: '>=3.3.3 <4.0.0'
+  sdk: '>=3.0.0 <4.0.0'
 
 dependencies:
   flutter:
@@ -19,9 +19,13 @@ flutter:
   uses-material-design: true
 
   assets:
-    - 'assets/img1.jpg'
-    - 'assets/img2.jpg'
-    - 'assets/img3.jpg'
-    - 'assets/img4.jpg'
-    - 'assets/img5.jpg'
+    - 'assets/evento1.png'
+    - 'assets/evento2.png'
+    - 'assets/evento3.png'
+    - 'assets/evento4.png'
+    - 'assets/evento5.png'
+    - 'assets/evento6.png'
+    - 'assets/evento7.png'
+    - 'assets/evento8.png'
+
 

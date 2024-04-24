@@ -86,7 +86,7 @@ class BottomTabbarExampleState extends State<BottomTabbarExample>
                 index)), // Corrigido para chamar _buildTabPage com o índice
       ),
       bottomNavigationBar: Material(
-        color: Color.fromARGB(255, 96, 96, 96),
+        color: Color.fromARGB(255, 255, 255, 255),
         child: TabBar(
           tabs: const [
             Tab(
@@ -126,10 +126,15 @@ class _InicialState extends State<Inicial> {
       child: Column(
         children: [
           // Chama a função para construir uma linha com duas imagens
-          _buildRowWithImages(2, 1, 'assets/img1.jpg', 'Nome da imagem 1'),
-          _buildRowWithImages(3, 4, 'assets/img2.jpg', 'Nome da imagem 2'),
-          _buildRowWithImages(5, 6, 'assets/img3.jpg', 'Nome da imagem 3'),
-          _buildRowWithImages(7, 8, 'assets/img4.jpg', 'Nome da imagem 4'),
+          _buildRowWithImages(0, 'assets/evento1.png', 'Anime Station - Terceira Edição'),
+          _buildRowWithImages(1, 'assets/evento2.png', 'OSASCO GAME FEST 2024'),
+          _buildRowWithImages(2, 'assets/evento3.png', 'Caravana ANIME FRIENDS 2024 / Animageek'),
+          _buildRowWithImages(3, 'assets/evento4.png', 'Anime Song Fest'),
+          _buildRowWithImages(4, 'assets/evento5.png', 'Anime Geek Darkness 2'),
+          _buildRowWithImages(5, 'assets/evento6.png', 'COSMO ANIME GEEK 6'),
+          _buildRowWithImages(6, 'assets/evento7.png', 'Motor Geek Fest'),
+          _buildRowWithImages(7, 'assets/evento8.png', 'FEIRA GEEK NA AVENIDA PAULISTA'),
+          
           // Adicione mais linhas de imagens aqui se necessário
         ],
       ),
@@ -138,7 +143,7 @@ class _InicialState extends State<Inicial> {
 
   // Função para construir uma linha com duas imagens
   Widget _buildRowWithImages(
-      int index1, int index2, String imagePath, String imageName) {
+      int index1, String imagePath, String imageName) {
     return Container(
       margin: EdgeInsets.all(10.0),
       child: Row(
@@ -147,7 +152,7 @@ class _InicialState extends State<Inicial> {
           // Chama a função para construir uma imagem com ícone de coração
           _buildImageWithHeartIcon(imagePath, imageName, index1),
           SizedBox(width: 10.0),
-          _buildImageWithHeartIcon(imagePath, imageName, index2),
+          // _buildImageWithHeartIcon(imagePath, imageName, index1 ),
         ],
       ),
     );
