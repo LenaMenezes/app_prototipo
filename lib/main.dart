@@ -105,7 +105,7 @@ class MainLogin extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 20),
-                // começa o botao de login
+                // começo do botao de login
                 Container(
                   width: 200,
                   height: 50,

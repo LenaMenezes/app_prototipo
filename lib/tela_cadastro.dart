@@ -17,11 +17,11 @@ class TelaCadastro extends StatelessWidget {
         body: SafeArea(
           child: Center(
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center, // centraliza meus elementos
               children: <Widget>[
-                SizedBox(height: 50),
+                SizedBox(height: 50), // espaçamento 
                 Icon(
-                  Icons.account_circle,
+                  Icons.account_circle, // icon de user 
                   size: 120,
                 ),
                 SizedBox(height: 10),
@@ -33,7 +33,7 @@ class TelaCadastro extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 20),
-                Container(
+                Container( // container que armazena meus input
                   width: 350,
                   child: TextField(
                     style: TextStyle(color: Colors.white),
@@ -50,7 +50,7 @@ class TelaCadastro extends StatelessWidget {
                         borderRadius: BorderRadius.circular(20),
                       ),
                     ),
-                    obscureText: false,
+                    obscureText: false, // deixa o texto que sera escrito no input visivel
                   ),
                 ),
                 SizedBox(height: 20),
@@ -119,7 +119,7 @@ class TelaCadastro extends StatelessWidget {
                   ),
                   child: ElevatedButton(
                     onPressed: () {
-                      // logica de cadastro
+                      // logica para o botao, sera implementado em breve
                     },
                     child: Text(
                       'CADASTRE-SE',
