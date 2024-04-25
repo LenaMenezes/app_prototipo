@@ -1,5 +1,3 @@
-# Prototipo Aplicativo de Eventos
-# Geek Connect
+# Prototipo Aplicativo de Geek Conect
 
-- A new Flutter project.
-- Integrantes: Helena Menezes Macedo - Ana Beatriz Abreu dos Santos  
+- Integrantes: Helena Menezes Macedo 
