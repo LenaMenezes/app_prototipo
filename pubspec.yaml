@@ -9,6 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  url_launcher: ^6.2.6
 
 dev_dependencies:
   flutter_test:
@@ -27,5 +28,6 @@ flutter:
     - 'assets/evento6.png'
     - 'assets/evento7.png'
     - 'assets/evento8.png'
+  # Adicionei as imagens dessa forma pois da forma convencional "assets: - 'assets/'"" nao estava reconhecendo as imgs
 
 
